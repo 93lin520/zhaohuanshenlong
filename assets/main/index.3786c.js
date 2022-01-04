@@ -540,11 +540,11 @@ window.__require = function e(t, a, i) {
 					1500, this.addSpeed = 65, this.maxTypeID = 1, this.canTouchReplay = !1;
 				for (var c = 0; c < 9; c++) {
 					var r = this.playerNode.children[c].scaleX;
-					this.fishScaleX.push(r)
+					this.fishScaleX.push(3*r)
 				}
 				for (var h = 0; h < 9; h++) {
 					var l = this.playerNode.children[h].scaleY;
-					this.fishScaleY.push(l)
+					this.fishScaleY.push(3*l)
 				}
 				this.jingyuNum = 0, this.jiaoNum = 0, this.Wu = cc.find("Canvas/Wu"), this
 					.light1 = cc.find("Canvas/light1"), this.light2 = cc.find(
