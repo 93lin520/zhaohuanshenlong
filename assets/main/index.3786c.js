@@ -863,7 +863,7 @@ window.__require = function e(t, a, i) {
 					var a;
 					a = t <= .8 * e ? 0 : t > .8 * e && t <= .9 * e ? 1 : 2;
 					var i = cc.instantiate(this.enemyPreArr[a]);
-					this.changeSize(i), i.typeID = a + 1;
+					this.changeSize(i), i.typeID = a + 7;
 					var o = this.carmeraNode.getChildByName("MoveCamera").getComponent(cc
 						.Camera).zoomRatio;
 					i.speed = (200 - 15 * i.typeID) / o;
