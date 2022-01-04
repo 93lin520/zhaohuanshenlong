@@ -540,11 +540,11 @@ window.__require = function e(t, a, i) {
 					1500, this.addSpeed = 65, this.maxTypeID = 1, this.canTouchReplay = !1;
 				for (var c = 0; c < 9; c++) {
 					var r = this.playerNode.children[c].scaleX;
-					this.fishScaleX.push(3*r)
+					this.fishScaleX.push(r)
 				}
 				for (var h = 0; h < 9; h++) {
 					var l = this.playerNode.children[h].scaleY;
-					this.fishScaleY.push(3*l)
+					this.fishScaleY.push(l)
 				}
 				this.jingyuNum = 0, this.jiaoNum = 0, this.Wu = cc.find("Canvas/Wu"), this
 					.light1 = cc.find("Canvas/light1"), this.light2 = cc.find(
@@ -588,7 +588,7 @@ window.__require = function e(t, a, i) {
 				return e
 			},
 			changeSize: function(e) {
-				e.scaleX = (e.scaleX - .1) * this.SizeScale, e.scaleY = (e.scaleY - .1) *
+				e.scaleX = (e.scaleX - .2) * this.SizeScale, e.scaleY = (e.scaleY - .2) *
 					this.SizeScale
 			},
 			CreateBG: function() {
@@ -700,7 +700,7 @@ window.__require = function e(t, a, i) {
 			createMap: function() {
 				this.CreateBG(), this.CreateBianJie();
 				var e = cc.instantiate(this.enemyPreArr[0]);
-				this.enemyNode.addChild(e), this.changeSize(e), e.typeID = 1, e.speed = 100;
+				this.enemyNode.addChild(e), this.changeSize(e), e.typeID = 8, e.speed = 100;
 				var t = this.enemyNode.convertToNodeSpaceAR(this.node.convertToWorldSpaceAR(
 						this.playerNode.position)),
 					a = s.getRandomNum(this.gameWidth / 3, 3 * this.gameWidth / 4, !1),
